@@ -13,7 +13,6 @@ public class ex6 {
 	public static void count(String x){
 		char[] ch = x.toCharArray();
 		int letter = 0;
-		int space = 0;
 		int num = 0;
 		int other = 0;
 		for(int i = 0; i < x.length(); i++){
@@ -23,16 +22,13 @@ public class ex6 {
 			else if(Character.isDigit(ch[i])){
 				num ++ ;
 			}
-			else if(Character.isSpaceChar(ch[i])){
-				space ++ ;
-			}
+			
 			else{
 				other ++;
 			}
 		}
 		System.out.println("The string is :" + x);
 		System.out.println("letter: " + letter);
-		System.out.println("space: " + space);
 		System.out.println("number: " + num);
 		System.out.println("Sentences: " + other);
 			}
@@ -44,4 +40,7 @@ public class ex6 {
 													//There must be no space in your text! 
 																	//There must be no space in your text! 
 																										//Taron
+    		
+
+    
     		
